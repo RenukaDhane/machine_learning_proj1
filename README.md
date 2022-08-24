@@ -10,6 +10,7 @@
 3. [VS code IDE](https://code.visualstudio.com/)
 
 4. [Git CMD](https://git-scm.com/downloads)
+5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
 
 Creating conda environment
 ```
@@ -62,4 +63,31 @@ To check remote url
 ```
 git remote -v
 ```
+To set up CI/CD pipeline n heroku we need 3 information
+1.HEROKU_EMAIL
+2.HEROKU_API_KEY
+3.HEROKU_APP_NAME
 
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tagname> .
+```
+> Note: Image name for docker must be lowercase
+
+To list docker image 
+```
+docker images
+```
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 33fb0d57530b
+```
+To check running container in docker
+```
+docker ps
+```
+
+To stop docker container 
+```
+docker stop <container_id>
+```
