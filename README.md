@@ -14,16 +14,16 @@
 
 Creating conda environment
 ```
-conda create -p ml1venv python==3.7 -y
+conda create -p env python==3.7 -y
 ```
 Activate conda environment 
 ```
-conda activate ml1venv/
+conda activate env/
 ```
 
 or 
 ```
-conda activate ml1venv
+conda activate env
 ```
 
 Install requirements.txt
@@ -81,6 +81,10 @@ docker images
 Run docker image
 ```
 docker run -p 5000:5000 -e PORT=5000 33fb0d57530b
+```
+browser
+```
+http://localhost:5000/
 ```
 To check running container in docker
 ```
